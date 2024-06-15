@@ -21,7 +21,7 @@ def customer_list(request):
     context = {
         'customers': customers
     }
-    return render(request,'Ecommerce/customer_list.html', context)
+    return render(request,'page.html', context)
 
 def customer_detail(request, pk):
     customer = get_object_or_404(Customer, pk=pk)
